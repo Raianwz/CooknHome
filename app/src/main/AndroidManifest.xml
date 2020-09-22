@@ -9,10 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".CadastroCozinheiro"></activity>
-        <activity android:name=".CadastroCliente">
-        </activity>
-        <activity android:name=".TelaEscolha" />
+        <activity android:name=".TelaEspera"></activity>
+        <activity android:name=".TelaArquivos" />
         <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,6 +18,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".CadastroCozinheiro" />
+        <activity android:name=".CadastroCliente" />
+        <activity android:name=".TelaEscolha" />
         <activity android:name=".MainActivity" />
     </application>
 

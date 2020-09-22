@@ -10,6 +10,7 @@
 
 
     <ImageView
+        android:id="@+id/imgEscSeta"
         android:layout_marginTop="5dp"
         android:layout_width="40dp"
         android:layout_height="40dp"
@@ -22,6 +23,7 @@
         android:orientation="vertical">
 
         <TextView
+            android:id="@+id/txtEscCliente"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="60dp"
@@ -29,9 +31,10 @@
             android:text="Sou cliente"
             android:gravity="center_horizontal"
             android:textColor="@android:color/white"
-            android:textSize="40dp" />
+            android:textSize="40sp" />
 
         <TextView
+            android:id="@+id/txtEscCozinheiro"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="80dp"
@@ -39,7 +42,7 @@
             android:text="Sou cozinheiro"
             android:gravity="center_horizontal"
             android:textColor="@android:color/white"
-            android:textSize="40dp" />
+            android:textSize="40sp" />
     </LinearLayout>
 
 

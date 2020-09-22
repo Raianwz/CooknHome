@@ -7,28 +7,35 @@
     android:layout_gravity="center_vertical|center_horizontal"
     android:background="@color/corPrincipal"
     android:orientation="vertical"
-    tools:context=".CadastroCliente">
+    tools:context=".CadastroCozinheiro">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <!-- Seta Retorno -->
         <ImageView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:id="@+id/imgCadCozinheiroSeta"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:layout_marginTop="5dp"
             android:src="@drawable/ic_seta" />
-
-        <!-- Titúlo Cadastro -->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="50dp"
-            android:gravity="center_horizontal"
-            android:text="Cadastro"
-            android:textColor="@android:color/white"
-            android:textSize="40sp" />
     </LinearLayout>
+
+    <!-- Titúlo Cadastro -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="Cadastro"
+        android:textColor="@color/corDestaque"
+        android:textSize="35sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/corDestaque" />
 
     <!-- Caixas de Texto -->
 
@@ -36,27 +43,31 @@
         android:id="@+id/txtCadCozinheiroNome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:hint="Nome"
         app:endIconMode="clear_text">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="45dp"
             android:background="@drawable/custom_input"
             android:inputType="text"
             android:paddingLeft="20dp" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/txtCadCozinheiroSobrenome"
+        android:id="@+id/txtCadClienteCozinheironome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:hint="Sobrenome"
         app:endIconMode="clear_text">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="45dp"
             android:background="@drawable/custom_input"
             android:inputType="text"
             android:paddingLeft="20dp" />
@@ -66,13 +77,14 @@
         android:id="@+id/txtCadCozinheiroEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:hint="Email"
-        app:endIconMode="clear_text"
-        app:startIconDrawable="@drawable/ic_email">
+        app:endIconMode="clear_text">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="45dp"
             android:background="@drawable/custom_input"
             android:inputType="textEmailAddress"
             android:paddingLeft="20dp" />
@@ -82,16 +94,17 @@
         android:id="@+id/txtCadCozinheiroTel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:hint="Telefone"
         app:counterEnabled="true"
         app:counterMaxLength="12"
         app:counterTextColor="@color/corTexto"
-        app:endIconMode="clear_text"
-        app:startIconDrawable="@drawable/ic_phone">
+        app:endIconMode="clear_text">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="45dp"
             android:background="@drawable/custom_input"
             android:inputType="number"
             android:maxLength="20"
@@ -102,14 +115,15 @@
         android:id="@+id/txtCadCozinheiroSenha"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:hint="Senha"
         app:counterTextColor="@color/corTexto"
-        app:endIconMode="password_toggle"
-        app:startIconDrawable="@drawable/ic_lock">
+        app:endIconMode="password_toggle">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="45dp"
             android:background="@drawable/custom_input"
             android:inputType="textPassword"
             android:paddingLeft="20dp" />
@@ -119,14 +133,15 @@
         android:id="@+id/txtCadCozinheiroSenhaConfirma"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:hint="Confirmar Senha"
         app:counterTextColor="@color/corTexto"
-        app:endIconMode="password_toggle"
-        app:startIconDrawable="@drawable/ic_lock">
+        app:endIconMode="password_toggle">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="45dp"
             android:background="@drawable/custom_input"
             android:inputType="textPassword"
             android:maxLength="20"
@@ -137,12 +152,14 @@
         android:id="@+id/txtCadCozinheiroCidade"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:hint="Cidade"
         app:endIconMode="clear_text">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="45dp"
             android:background="@drawable/custom_input"
             android:inputType="text"
             android:paddingLeft="20dp" />
@@ -154,15 +171,16 @@
         android:layout_height="match_parent">
 
         <Button
-            android:id="@+id/CadCozinheiroBtnCadastrar"
-            android:layout_width="150dp"
-            android:layout_height="50dp"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/custom_input"
-            android:backgroundTint="@color/corDestaque"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginRight="120dp"
+            android:background="@drawable/custom_button"
             android:text="Continuar"
-            android:textColor="@android:color/white" />
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="25sp" />
     </RelativeLayout>
 
 </LinearLayout>

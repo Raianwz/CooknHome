@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (view.getId()){
             case R.id.txtCriarConta:
                 startActivity(new Intent(getApplicationContext(), TelaEscolha.class));
+                break;
         }
     }
 }
